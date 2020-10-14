@@ -1,0 +1,36 @@
+﻿@model Proyecto.Models.Formulario
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Formulario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Puesto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Puesto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Requesitos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Requesitos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Atribuciones)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Atribuciones)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PuestoID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

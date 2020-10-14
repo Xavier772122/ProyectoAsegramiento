@@ -1,0 +1,57 @@
+﻿@model Proyecto.Models.pnc_modelo
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>pnc_modelo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_registro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fecha_registro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_proceso)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre_proceso)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.producto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.producto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.accion_inmediata)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.accion_inmediata)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.accion_correctiva)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.accion_correctiva)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion_accion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.descripcion_accion)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Idpnc" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
